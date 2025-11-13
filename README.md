@@ -1,4 +1,4 @@
-# Task Tracker API
+# Assignment Task Tracker API
 
 A backend web service built with FastAPI for managing tasks, authentication, and project tracking.  
 Developed for ITCC14 Web Services Final Project.
