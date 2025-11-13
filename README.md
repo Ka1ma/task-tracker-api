@@ -5,7 +5,7 @@ Developed for ITCC14 Web Services Final Project.
 
 ## Team Members
 - Mychal Redoblado (@Ka1ma)
-- E fork lng ninyu para maka add mos inyu name dani (add name via pull request)
+- Kyle Gabriel T. Galanida (KGG-Student)
 
 ## Project Milestones
 
