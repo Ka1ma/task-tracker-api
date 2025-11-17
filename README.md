@@ -8,7 +8,6 @@ Developed for ITCC14 Web Services Final Project.
 - Kyle Gabriel T. Galanida (KGG-Student)
 - Karlos Semilla (@Ykarlossemilla)
 - Jhemar Visande (@JhemarVisande)
-- E fork lng ninyu para maka add mos inyu name dani (add name via pull request)
 
 ## Project Milestones
 
