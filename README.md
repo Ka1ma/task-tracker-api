@@ -4,7 +4,7 @@ A backend web service built with FastAPI for managing tasks, authentication, and
 Developed for ITCC14 Web Services Final Project.
 
 ## Team Members
-- Mychal Redoblado (@Ka1ma)
+- Mychal Redoblado (@Ka1ma) (MychalXU)
 - Kyle Gabriel T. Galanida (KGG-Student)
 - Karlos Semilla (@Ykarlossemilla)
 - Jhemar Visande (@JhemarVisande)
