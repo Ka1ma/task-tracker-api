@@ -30,11 +30,11 @@ Checklists:
 
 ### Milestone 2 (Nov Week 2): Authentication and Database Integration
 What we'll do:
-Implement registration, login, and JWT authentication. Connect MongoDB using Motor.
+Implement registration, login, and JWT authentication. Connect MongoDB Atlas using Motor.
 
 Deliverables:
 - Working register and login endpoints
-- MongoDB connection established
+- MongoDB Atlas connection established
 - Token-based authentication implemented
 
 Checklists:
@@ -103,6 +103,13 @@ This API aims to provide a lightweight system to manage tasks, monitor progress,
 - Provide CRUD operations for task management
 - Ensure a simple and reliable backend for future frontend integration
 
+## Technology Stack
+- **Backend**: FastAPI (Python)
+- **Database**: MongoDB Atlas (cloud-hosted)
+- **Authentication**: JWT tokens
+- **Deployment**: Heroku
+- **Testing**: pytest
+
 ## API Endpoints
 
 ### Authentication
@@ -126,7 +133,9 @@ The API is prepared for deployment on Heroku with the following files:
 To deploy:
 1. Create a Heroku account and install Heroku CLI
 2. Run `heroku create your-app-name`
-3. Set environment variables (e.g., `MONGODB_URL`, `SECRET_KEY`)
+3. Set environment variables:
+   - `MONGODB_URL`: Your MongoDB Atlas connection string
+   - `SECRET_KEY`: A secure random string for JWT signing
 4. Run `git push heroku main`
 5. The API will be live at `https://your-app-name.herokuapp.com`
 
