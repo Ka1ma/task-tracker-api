@@ -40,8 +40,8 @@ Deliverables:
 Checklists:
 - [x] Create auth_routes.py
 - [x] Add password hashing and JWT token generation
-- [ ] Test register/login with pytest
-- [ ] Push updates to GitHub
+- [x] Test register/login with pytest
+- [x] Push updates to GitHub
 
 ---
 
@@ -55,16 +55,16 @@ Deliverables:
 - Test cases for each route
 
 Checklists:
-- [ ] Implement POST, GET, PUT, DELETE
-- [ ] Add authentication middleware
-- [ ] Write pytest cases
-- [ ] Commit and push changes
+- [x] Implement POST, GET, PUT, DELETE
+- [x] Add authentication middleware
+- [x] Write pytest cases
+- [x] Commit and push changes
 
 ---
 
 ### Milestone 4 (Nov Week 4): Testing and Deployment
 What we'll do:
-Run all tests, prepare documentation, and deploy API to Render or similar platform.
+Run all tests, prepare documentation, and deploy API to Heroku or similar platform.
 
 Deliverables:
 - Passing tests
@@ -72,8 +72,8 @@ Deliverables:
 - Final README documentation
 
 Checklists:
-- [ ] Complete tests
-- [ ] Deploy API
+- [x] Complete tests
+- [x] Deploy API (prepared deployment files)
 - [ ] Update README with live link
 
 ---
@@ -102,5 +102,32 @@ This API aims to provide a lightweight system to manage tasks, monitor progress,
 - Implement a secure authentication system using JWT
 - Provide CRUD operations for task management
 - Ensure a simple and reliable backend for future frontend integration
+
+## API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - Register a new user
+- `POST /api/auth/login` - Login and get JWT token
+
+### Tasks (Protected)
+- `POST /api/tasks/` - Create a new task
+- `GET /api/tasks/` - List all tasks for the authenticated user
+- `GET /api/tasks/{task_id}` - Get a specific task
+- `PUT /api/tasks/{task_id}` - Update a task
+- `DELETE /api/tasks/{task_id}` - Delete a task
+
+## Deployment
+
+The API is prepared for deployment on Heroku with the following files:
+- `Procfile` - Defines the web process
+- `runtime.txt` - Specifies Python version
+- `requirements.txt` - Lists all dependencies
+
+To deploy:
+1. Create a Heroku account and install Heroku CLI
+2. Run `heroku create your-app-name`
+3. Set environment variables (e.g., `MONGODB_URL`, `SECRET_KEY`)
+4. Run `git push heroku main`
+5. The API will be live at `https://your-app-name.herokuapp.com`
 
 Repository: https://github.com/Ka1ma/task-tracker-api
