@@ -208,18 +208,52 @@ The easiest way to test the application is through the Streamlit frontend, which
 
 ### Using Postman (for API Testing)
 
-For direct API testing, use Postman with the following endpoints:
+We've included a comprehensive Postman collection for easy API testing.
 
-#### Authentication Collection
+#### Import the Postman Collection
+
+1. Open Postman
+2. Click "Import" button
+3. Select the file: `Assignment_Task_Tracker_API.postman_collection.json`
+4. The collection will be imported with all endpoints pre-configured
+
+#### Collection Features
+
+- **Automatic Token Management**: Login endpoint automatically saves the JWT token
+- **Automatic Task ID Capture**: Create task endpoint saves the task ID for subsequent requests
+- **Pre-configured Examples**: All requests include example data using team member names
+- **Environment Variables**: Uses collection variables for base_url, access_token, and task_id
+
+#### Testing Workflow
+
+1. **Register a User**: Run the "Register User" request
+2. **Login**: Run the "Login User" request (token is automatically saved)
+3. **Create Task**: Run the "Create Task" request (task ID is automatically saved)
+4. **List Tasks**: View all your tasks
+5. **Get Task Details**: View a specific task using the saved task_id
+6. **Update Task**: Modify a task using the saved task_id
+7. **Delete Task**: Remove a task using the saved task_id
+
+#### Collection Variables
+
+- `base_url`: http://127.0.0.1:8000 (change if using different host/port)
+- `access_token`: Automatically populated after login
+- `task_id`: Automatically populated after creating a task
+
+#### Manual Testing Endpoints
+
+If you prefer manual testing, here are the endpoints:
+
+**Authentication:**
 - POST /api/auth/register
 - POST /api/auth/login
 
-#### Task Management Collection
-- POST /api/tasks/ (requires Bearer token)
-- GET /api/tasks/ (requires Bearer token)
-- GET /api/tasks/{task_id} (requires Bearer token)
-- PUT /api/tasks/{task_id} (requires Bearer token)
-- DELETE /api/tasks/{task_id} (requires Bearer token)
+**Task Management (requires Bearer token):**
+- POST /api/tasks/
+- GET /api/tasks/
+- GET /api/tasks/{task_id}
+- PUT /api/tasks/{task_id}
+- DELETE /api/tasks/{task_id}
 
 ## Testing
 
