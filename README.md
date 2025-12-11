@@ -29,8 +29,8 @@ POST /api/auth/register
 Content-Type: application/json
 
 {
-  "email": "user@example.com",
-  "username": "username",
+  "email": "mychal.redoblado@example.com",
+  "username": "mychalredoblado",
   "password": "password"
 }
 ```
@@ -41,7 +41,7 @@ POST /api/auth/login
 Content-Type: application/json
 
 {
-  "email": "user@example.com",
+  "email": "mychal.redoblado@example.com",
   "password": "password"
 }
 ```
@@ -67,8 +67,8 @@ POST /api/tasks/
 Content-Type: application/json
 
 {
-  "title": "Task Title",
-  "description": "Task description",
+  "title": "Complete ITCC14 Final Project",
+  "description": "Finish the Assignment Task Tracker API with all team members",
   "completed": false,
   "due_date": "2024-12-31"
 }
@@ -107,7 +107,7 @@ PUT /api/tasks/{task_id}
 Content-Type: application/json
 
 {
-  "title": "Updated Title",
+  "title": "Complete ITCC14 Final Project - Updated",
   "completed": true
 }
 ```
