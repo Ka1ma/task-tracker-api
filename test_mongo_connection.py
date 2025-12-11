@@ -4,7 +4,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 async def test_connection():
     try:
         client = AsyncIOMotorClient(
-            'mongodb+srv://mychalredoblado_db_user:AssignmentTaskTracker@cluster0.krci2u0.mongodb.net/?appName=Cluster0',
+            'mongodb+srv://mychalredoblado_db_user:Assignment123@cluster0.krci2u0.mongodb.net/?appName=Cluster0',
             tls=True,
             tlsAllowInvalidCertificates=True,
             serverSelectionTimeoutMS=5000
