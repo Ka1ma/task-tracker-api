@@ -1,7 +1,7 @@
 # Configuration settings for the application
 
 # MongoDB Atlas connection
-MONGO_URL = "mongodb+srv://mychalredoblado_db_user:AssignmentTaskTracker@cluster0.krci2u0.mongodb.net/?appName=Cluster0"
+MONGO_URL = "mongodb+srv://mychalredoblado_db_user:Assignment123@cluster0.krci2u0.mongodb.net/?appName=Cluster0"
 DATABASE_NAME = "tasktracker"
 SECRET_KEY = "your_secret_key_here"
 
